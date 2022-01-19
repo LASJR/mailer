@@ -1,0 +1,28 @@
+<mj-wrapper background-color="#fff">
+
+	{% include 'partials/common/divider.html'%}
+	<mj-section>
+		<mj-column padding-bottom="10px">
+			<mj-text font-family="Piazzolla" font-size="32px" align="center" font-weight="bold"
+				color="#666">Статьи номера
+			</mj-text>
+		</mj-column>
+	</mj-section>
+
+	<mj-section padding-top="0" padding-bottom="0">
+
+		<mj-column>
+			<mj-text color="#444" font-size="16px" line-height="1.2">
+				<ol style="padding-left: 20px;">
+					{% for article in rows %}
+					<li style="padding: 0 0 12px 0;">
+						<a class="underlined" href="{{ article.link }}">{{ article.title }}</a>
+					</li>
+					{% endfor %}
+				</ol>
+			</mj-text>
+
+		</mj-column>
+	</mj-section>
+
+</mj-wrapper>

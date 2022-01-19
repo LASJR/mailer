@@ -1,0 +1,23 @@
+<mj-column>
+	<mj-text font-family="Piazzolla" font-weight="bold" font-size="22px" color="#444">
+		<a class="link-nostyle" href="{{ article.link }}">{{ article.title }}</a>
+	</mj-text>
+
+	<mj-text padding-top="10px" font-size="14px" color="#666">
+		{% for author in article.authors[:3] %}
+		{{ author | trim | replace(" ", " ") }}{{ ", " if not loop.last }}
+		{% endfor %}
+		{% if article.authors|length > 3%}
+		и др.
+		{% endif %}
+	</mj-text>
+
+	<mj-button padding-top="12px" align="left" background-color="#68593C" font-weight="bold" color="white"
+		inner-padding="5px 8px" href="{{ article.link }}">
+		Читать статью на сайте
+	</mj-button>
+
+	<mj-text padding-top="15px" font-size="14px" color="#555" line-height="1.2" align="justify">
+		{{ article.teaser }}
+	</mj-text>
+</mj-column>

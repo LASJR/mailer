@@ -1,0 +1,13 @@
+<mj-wrapper padding-bottom="25px" background-color="#fff">
+	{% for article in rows %}
+
+	{% include 'partials/common/divider.html'%}
+
+	<mj-section padding-top="0" padding-bottom="0">
+
+		{% include 'partials/issue/article.html'%}
+
+	</mj-section>
+
+	{% endfor %}
+</mj-wrapper>

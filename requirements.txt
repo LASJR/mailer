@@ -1,0 +1,9 @@
+chakert==0.2.1
+importlib-metadata==4.10.1
+Jinja2==3.0.3
+jinja2-cli==0.7.0
+jinja2-markdown==0.0.3
+lxml==4.7.1
+Markdown==3.3.6
+MarkupSafe==2.0.1
+zipp==3.7.0

@@ -1,0 +1,30 @@
+{% typograph %}
+<mjml lang="ru">
+  <mj-head>
+<mj-title>{% block title %}Лабораторные животные для научных исследований{% endblock title%}</mj-title>
+    {% include 'partials/common/head.html' %}
+  </mj-head>
+  <mj-body background-color="#efdbb2" css-class="bg">
+
+    {% include 'partials/common/spacer.html' %}
+
+    {% block header %}
+    {% include 'partials/common/header.html' %}
+    {% endblock header %}
+
+    {% block body %}
+    {% endblock body %}
+
+    {% block footer %}
+    {% include 'partials/common/footer.html' %}
+    {% endblock footer %}
+
+    {% include 'partials/common/spacer.html' %}
+
+    {% block legal_notice %}
+    {% include 'partials/common/legal-notice.html' %}
+    {% endblock legal_notice %}
+
+  </mj-body>
+</mjml>
+{% endtypograph %}

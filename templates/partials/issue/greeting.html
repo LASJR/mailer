@@ -1,0 +1,44 @@
+<mj-wrapper background-color="#fff">
+  <mj-section padding-bottom="0">
+    <mj-column width="20%" padding="0">
+			<mj-image href="https://labanimalsjournal.ru" src="https://labanimalsjournal.ru/mailing/makarov.jpg" />
+    </mj-column>
+  </mj-section>
+
+  <mj-section padding-bottom="0">
+    <mj-column>
+      <mj-text
+        font-size="22px"
+        align="center"
+        color="#444"
+        padding-bottom="10px"
+        >Уважаемые подписчики!
+      </mj-text>
+      <mj-text
+        font-size="16px"
+        align="justify"
+        color="#555"
+        line-height="1.2"
+        css-class="colored-links"
+      >
+	{% markdown %}
+	{% include 'markdown/issue/greeting.md' %}
+	{% endmarkdown %}
+
+
+      </mj-text>
+
+      <mj-text
+        padding-top="20px"
+        font-size="14px"
+        font-style="italic"
+        align="right"
+        color="#777"
+        line-height="1.4"
+      >
+        Главный редактор<br />
+        Валерий Геннадьевич Макаров
+      </mj-text>
+    </mj-column>
+  </mj-section>
+</mj-wrapper>
